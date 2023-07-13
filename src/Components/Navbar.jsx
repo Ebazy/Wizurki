@@ -15,7 +15,7 @@ function Navbar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed">
+            <AppBar position="static">
                 <Toolbar sx={{ backgroundColor: "purple", justifyContent: "space-between" }}>
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>
                         <IconButton
@@ -45,13 +45,13 @@ function Navbar() {
                             onClose={handleClose}
                         >
                             <MenuItem onClick={handleClose}>
-                                <Button color="inherit">Cumkulator</Button>
+                                <Button color="inherit">Cennik</Button>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <Button color="inherit">O mn</Button>
+                                <Button color="inherit">Kontakt</Button>
                             </MenuItem>
                             <MenuItem onClick={handleClose}>
-                                <Button color="inherit">Zdjęcia UwU</Button>
+                                <Button color="inherit">Zdjęcia prac</Button>
                             </MenuItem>
                         </Menu>
                     </Box>
@@ -68,13 +68,13 @@ function Navbar() {
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>
                         <Button sx={{ mr: 4, border: "2px solid black", borderRadius: 3 }} color="inherit">
-                            Cumkulator
+                            Cennik
                         </Button>
                         <Button sx={{ mr: 4, border: "2px solid black", borderRadius: 3 }} color="inherit">
-                            O mn
+                            Kontakt
                         </Button>
                         <Button sx={{ mr: 4, border: "2px solid black", borderRadius: 3 }} color="inherit">
-                            Zdjęcia UwU
+                            Zdjęcia prac
                         </Button>
                     </Box>
                 </Toolbar>
