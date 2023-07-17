@@ -1,19 +1,15 @@
 import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import {Container} from "@mui/material";
-import {useState} from "react";
+import { Container } from "@mui/material";
+import { useState } from "react";
 
 export default function NailsImageList() {
-    const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
+    const handleImageClick = () => {
+        window.open('https://www.instagram.com/wizurki/', '_blank');
     };
 
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
 
     return (
         <Container
@@ -22,36 +18,41 @@ export default function NailsImageList() {
                 justifyContent: 'center',
                 mt: 10,
                 pb: 10
-        }}>
-        <Box
-            sx={{
-                width: 900,
-                height: 500,
-                overflowY: 'hidden',
-                border: '2px solid purple',
-                boxShadow: '0px 3px 3px -2px purple, 0px 3px 4px 0px purple, 0px 1px 8px 0px purple;',
-                backgroundColor: 'pink',
-                '&:hover': {
-                    overflowY: 'scroll',
-                },
-        }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+            }}
         >
-            <ImageList variant="masonry" cols={2} gap={12}>
-                {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
-                        <img
-                            src={`${item.img}?w=248&fit=crop&auto=format`}
-                            srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                            alt={item.title}
-                            loading="lazy"
-                        />
-                    </ImageListItem>
-                ))}
-            </ImageList>
-        </Box>
-</Container>
+            <Box
+                sx={{
+                    width: 900,
+                    height: 500,
+                    border: '2px solid purple',
+                    boxShadow: '0px 3px 3px -2px purple, 0px 3px 4px 0px purple, 0px 1px 8px 0px purple;',
+                    backgroundColor: 'pink',
+                    overflowY: 'scroll',
+                    scrollbarColor: 'purple pink',
+                    '&::-webkit-scrollbar': {
+                        width: '8px',
+                        backgroundColor: 'pink',
+                    },
+                    '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: 'purple',
+                        borderRadius: '4px',
+                    },
+                }}
+            >
+                <ImageList variant="masonry" cols={2} gap={12} sx={{ m: 0 }}>
+                    {itemData.map((item) => (
+                        <ImageListItem key={item.img} onClick={handleImageClick} style={{ cursor: 'pointer' }}>
+                            <img
+                                src={`${item.img}?w=248&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    ))}
+                </ImageList>
+            </Box>
+        </Container>
     );
 }
 
