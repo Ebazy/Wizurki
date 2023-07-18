@@ -6,14 +6,12 @@ function Footer() {
             <AppBar position="static" sx={{ height: 80, display: 'flex' }}>
                 <Toolbar sx={{ backgroundColor: "purple", justifyContent: "space-between", alignItems: 'center', height: 80 }}>
                     <Box sx={{ alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
-                        <IconButton
-                            size="large"
+                        <h2
                             color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2, justifyContent: 'center', alignItems: 'center' }}
+                            style={{ margin: 10, justifyContent: 'center', alignItems: 'center', fontWeight: 500, fontSize: '2rem' }}
                         >
                             Wizurki
-                        </IconButton>
+                        </h2>
                     </Box>
                     <Box sx={{ display: 'flex', flexDirection: 'row', height: 80, justifyContent: 'space-evenly', alignItems: 'center' }}>
                             <a href="https://booksy.com/pl-pl/139457_manifest-studio_paznokcie_3_warszawa" target="_blank" rel="noopener noreferrer">

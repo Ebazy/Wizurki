@@ -26,12 +26,12 @@ export default function NailsImageList() {
                     height: 500,
                     border: '2px solid purple',
                     boxShadow: '0px 3px 3px -2px purple, 0px 3px 4px 0px purple, 0px 1px 8px 0px purple;',
-                    backgroundColor: 'pink',
+                    backgroundColor: '#cd5c5c',
                     overflowY: 'scroll',
                     scrollbarColor: 'purple pink',
                     '&::-webkit-scrollbar': {
                         width: '8px',
-                        backgroundColor: 'pink',
+                        backgroundColor: '#cd5c5c',
                     },
                     '&::-webkit-scrollbar-thumb': {
                         backgroundColor: 'purple',

@@ -24,7 +24,18 @@ function App() {
                 <AboutMe />
             </div>
             <div className="photo_list">
+                <h2>Prace Wiktori 😍</h2>
                 <NailsImageList />
+            </div>
+            <div className="cennik">
+                <h2>Cennik zabiegów 💅</h2>
+                <PrzedstawiatorCeny/>
+            </div>
+            <div className='info'>
+                <p>
+                    <span>Zapisz się już teraz do Wiktori 😎</span>
+                    <span>(link do booksy poniżej w stopce 👇 lub na górze strony pod przyciskiem Kontakt 👆)</span>
+                </p>
             </div>
             <div>
             <Footer/>

@@ -23,7 +23,7 @@ function Navbar() {
                             edge="start"
                             color="inherit"
                             aria-label="menu"
-                            sx={{ mr: 2 }}
+                            sx={{ mr: 2, fontSize: '3rem'}}
                         >
                             Wizurki
                         </IconButton>
@@ -67,13 +67,13 @@ function Navbar() {
                     </IconButton>
                     </Box>
                     <Box sx={{ display: { xs: 'none', sm: 'flex' }, alignItems: 'center' }}>
-                        <Button sx={{ mr: 4, border: "2px solid black", borderRadius: 3 }} color="inherit">
+                        <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Cennik
                         </Button>
-                        <Button sx={{ mr: 4, border: "2px solid black", borderRadius: 3 }} color="inherit">
+                        <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Kontakt
                         </Button>
-                        <Button sx={{ mr: 4, border: "2px solid black", borderRadius: 3 }} color="inherit">
+                        <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Zdjęcia prac
                         </Button>
                     </Box>

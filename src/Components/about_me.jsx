@@ -2,11 +2,11 @@ import { Typography, Container, Paper, Grid, Box, useMediaQuery, useTheme } from
 
 const AboutMe = () => {
     const theme = useTheme();
-    const ChangeScreen = useMediaQuery(theme.breakpoints.down('md'));
+    const ChangeScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
     return (
         <Container maxWidth="lg" sx={{ backgroundColor: 'transparent'}}>
-            <Paper elevation={3} sx={{ backgroundColor: 'transparent', boxShadow: '0px 3px 3px -2px purple, 0px 3px 4px 0px purple, 0px 1px 8px 0px purple;'}} >
+            <Paper elevation={3} sx={{ backgroundColor: 'transparent', boxShadow: '0px 5px 5px -3px purple, 0px 4px 5px 0px purple, 0px 2px 10px 0px purple;'}} >
                 <Grid container spacing={2}>
                     {!ChangeScreen && (
                         <>
@@ -22,7 +22,7 @@ const AboutMe = () => {
                             <Typography variant="h3" sx={{ wordWrap: 'break-word', paddingBottom: 6 }}>
                                 Poznaj Wiktorię,
                             </Typography>
-                            <Typography variant="body1" sx={{ wordWrap: 'break-word' }}>
+                            <Typography variant="body1" sx={{ wordWrap: 'break-word', fontSize: '1.5rem' }}>
                                 Początkującą stylistkę paznokci, pełną pozytywnej energii i dowcipnego podejścia! Z pędzelkiem w jednej
                                 ręce i kolekcją lakierów do paznokci, która przyprawiłaby tęczę o zazdrość, jest gotowa podbić świat,
                                 jeden paznokieć na raz.
@@ -53,10 +53,10 @@ const AboutMe = () => {
                         </Grid>
                             <Grid item xs={12} sm={12}>
                                 <Box sx={{ padding: '1rem', color: 'white' }}>
-                                    <Typography variant="h4" sx={{ wordWrap: 'break-word' }}>
+                                    <Typography variant="h6" sx={{ wordWrap: 'break-word', fontSize: '2rem' }}>
                                         Poznaj Wiktorię,
                                     </Typography>
-                                    <Typography variant="body1" sx={{ wordWrap: 'break-word' }}>
+                                    <Typography variant="body1" sx={{ wordWrap: 'break-word', fontSize: '1.3rem' }}>
                                         Początkującą stylistkę paznokci, pełną pozytywnej energii i dowcipnego podejścia! Z pędzelkiem w jednej
                                         ręce i kolekcją lakierów do paznokci, która przyprawiłaby tęczę o zazdrość, jest gotowa podbić świat,
                                         jeden paznokieć na raz.
