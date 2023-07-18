@@ -37,7 +37,7 @@ export default function PrzedstawiatorCeny() {
 
     return (
         <>
-            <div className="price_list">
+            <div className="price_list" style={{maxWidth: 1200}}>
                 {fetchError && <p>{fetchError}</p>}
                 {nails && (
                     <div className="nails">
