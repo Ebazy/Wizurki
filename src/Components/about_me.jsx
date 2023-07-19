@@ -46,7 +46,7 @@ const AboutMe = () => {
                         <>
                         <Grid item xs={12} className="image-container">
                             <img
-                                src="../../public/assets/wika.jpg"
+                                src="/assets/wika.jpg"
                                 alt="Wiktoria"
                                 style={{ width: '100%', height: '100%' }}
                             />
