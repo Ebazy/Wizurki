@@ -80,7 +80,7 @@ function Navbar() {
                         <a href="https://booksy.com/pl-pl/139457_manifest-studio_paznokcie_3_warszawa"
                             target="_blank"
                             rel="noopener noreferrer"
-                           style={{ textDecoration: 'inherit', color: git'inherit' }}>
+                           style={{ textDecoration: 'inherit', color: 'inherit' }}>
 
                         <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Kontakt
