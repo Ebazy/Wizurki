@@ -19,7 +19,9 @@ function App() {
     return (
         <div className='main'>
             <CssBaseline />
+            <div className='navbar'>
             <Navbar />
+            </div>
             <div className="about_me">
                 <AboutMe />
             </div>

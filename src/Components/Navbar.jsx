@@ -44,14 +44,21 @@ function Navbar() {
                             open={Boolean(mixin)}
                             onClose={handleClose}
                         >
-                            <MenuItem onClick={handleClose}>
-                                <Button color="inherit">Cennik</Button>
+                            <MenuItem >
+                                <Button color="inherit" onClick={handleClose}>Cennik</Button>
                             </MenuItem>
-                            <MenuItem onClick={handleClose}>
-                                <Button color="inherit">Kontakt</Button>
+                            <MenuItem>
+                                    <Button onClick={handleClose} color="inherit" sx={{textDecoration: 'none'}}>
+                                        <a href="https://booksy.com/pl-pl/139457_manifest-studio_paznokcie_3_warszawa"
+                                              target="_blank"
+                                              rel="noopener noreferrer"
+                                        style={{ textDecoration: 'inherit', color: 'inherit'}}>
+                                            Kontakt
+                                        </a>
+                                    </Button>
                             </MenuItem>
-                            <MenuItem onClick={handleClose}>
-                                <Button color="inherit">Zdjęcia prac</Button>
+                            <MenuItem >
+                                <Button color="inherit" onClick={handleClose}>Zdjęcia prac</Button>
                             </MenuItem>
                         </Menu>
                     </Box>
@@ -70,9 +77,15 @@ function Navbar() {
                         <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Cennik
                         </Button>
+                        <a href="https://booksy.com/pl-pl/139457_manifest-studio_paznokcie_3_warszawa"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                           style={{ textDecoration: 'inherit', color: git'inherit' }}>
+
                         <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Kontakt
                         </Button>
+                        </a>
                         <Button sx={{ mr: 2, border: "2px solid black", borderRadius: 3, fontSize: '1' }} color="inherit">
                             Zdjęcia prac
                         </Button>
