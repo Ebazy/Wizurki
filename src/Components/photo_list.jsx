@@ -58,39 +58,39 @@ export default function NailsImageList() {
 
 const itemData = [
     {
-        img: 'src/assets/paznokcie_1.jpg',
+        img: '../../public/assets/paznokcie_1.jpg',
         title: 'paznokcie1',
     },
     {
-        img: 'src/assets/paznokcie_2.jpg',
+        img: '../../public/assets/paznokcie_2.jpg',
         title: 'paznokcie2',
     },
     {
-        img: 'src/assets/paznokcie_3.jpg',
+        img: '../../public/assets/paznokcie_3.jpg',
         title: 'paznokcie3',
     },
     {
-        img: 'src/assets/paznokcie_4.jpg',
+        img: '../../public/assets/paznokcie_4.jpg',
         title: 'paznokcie4',
     },
     {
-        img: 'src/assets/paznokcie_5.jpg',
+        img: '../../public/assets/paznokcie_5.jpg',
         title: 'paznokcie5',
     },
     {
-        img: 'src/assets/paznokcie_6.jpg',
+        img: '../../public/assets/paznokcie_6.jpg',
         title: 'paznokcie6',
     },
     {
-        img: 'src/assets/paznokcie_7.jpg',
+        img: '../../public/assets/paznokcie_7.jpg',
         title: 'paznokcie7',
     },
     {
-        img: 'src/assets/paznokcie_8.jpg',
+        img: '../../public/assets/paznokcie_8.jpg',
         title: 'paznokcie8',
     },
     {
-        img: 'src/assets/paznokcie_9.jpg',
+        img: '../../public/assets/paznokcie_9.jpg',
         title: 'paznokcie9',
     },
 ];
