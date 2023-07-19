@@ -12,26 +12,23 @@ import Footer from "./Components/footer.jsx";
 
 
 
-
 function App() {
-
-
     return (
         <div className='main'>
             <CssBaseline />
             <div className='navbar'>
-            <Navbar />
+            <Navbar  />
             </div>
-            <div className="about_me">
+            <div className='about_me'>
                 <AboutMe />
             </div>
-            <div className="photo_list">
+            <div className='photo_list'>
                 <h2>Prace Wiktori 😍</h2>
                 <NailsImageList />
             </div>
-            <div className="cennik">
+            <div className='cennik'>
                 <h2>Cennik zabiegów 💅</h2>
-                <PrzedstawiatorCeny/>
+                <PrzedstawiatorCeny />
             </div>
             <div className='info'>
                 <p>

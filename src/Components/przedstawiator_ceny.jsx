@@ -37,10 +37,15 @@ export default function PrzedstawiatorCeny() {
 
     return (
         <>
-            <div className="price_list" style={{maxWidth: 1200}}>
+            <div
+                className="price_list"
+                style={{maxWidth: 1200}}
+            >
                 {fetchError && <p>{fetchError}</p>}
                 {nails && (
-                    <div className="nails">
+                    <div
+                        className="nails"
+                    >
                         <Select
                             value={selectedOption}
                             onChange={handleChange}
@@ -50,11 +55,18 @@ export default function PrzedstawiatorCeny() {
                             sx={{color: 'white', fontSize: '1.1rem'}}
                             disableUnderline='true'
                         >
-                            <MenuItem value="" disabled>
+                            <MenuItem
+                                value=""
+                                disabled
+                            >
                                 Proszę wybrać usługę
                             </MenuItem>
-                            {nails.map((nail, index) => (
-                                <MenuItem key={index} value={nail.Title} sx={{fontSize: '1.15rem'}}>
+                            {nails
+                                .map((nail, index) => (
+                                <MenuItem
+                                    key={index}
+                                    value={nail.Title}
+                                    sx={{fontSize: '1.15rem'}}>
                                     {nail.Title}
                                 </MenuItem>
                             ))}
@@ -62,10 +74,20 @@ export default function PrzedstawiatorCeny() {
                     </div>
                 )}
                 {selectedOption && (
-                    <div className="selected_option_box">
+                    <div
+                        className="selected_option_box"
+                    >
                         <h3>{selectedOption}</h3>
-                        <p>{nails.find((nail) => nail.Title === selectedOption).Description}</p>
-                        <p>Cena: {nails.find((nail) => nail.Title === selectedOption).Price} zł</p>
+                        <p>{nails
+                            .find((nail) => nail
+                                .Title === selectedOption)
+                            .Description}
+                        </p>
+                        <p>Cena: {nails
+                            .find((nail) => nail
+                                .Title === selectedOption)
+                            .Price} zł
+                        </p>
                     </div>
                 )}
             </div>

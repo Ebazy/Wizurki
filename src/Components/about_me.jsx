@@ -5,24 +5,67 @@ const AboutMe = () => {
     const ChangeScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
     return (
-        <Container maxWidth="lg" sx={{ backgroundColor: 'transparent'}}>
-            <Paper elevation={3} sx={{ backgroundColor: 'transparent', boxShadow: '0px 5px 5px -3px purple, 0px 4px 5px 0px purple, 0px 2px 10px 0px purple;'}} >
-                <Grid container spacing={2}>
+        <Container
+            maxWidth='lg'
+            sx={{
+                backgroundColor: 'transparent'
+        }}
+        >
+            <Paper
+                elevation={3}
+                sx={{
+                    backgroundColor: 'transparent',
+                    boxShadow: '0px 5px 5px -3px purple, 0px 4px 5px 0px purple, 0px 2px 10px 0px purple;'
+            }}
+            >
+                <Grid
+                    container spacing={2}
+                >
                     {!ChangeScreen && (
                         <>
-                        <Grid item xs={6} >
+                        <Grid
+                            item xs={6}
+                        >
                             <img
-                                src="/assets/wika.jpg"
-                                alt="Wiktoria"
-                                style={{ width: '100%', height: '100%', float: 'left', marginRight: '1rem' }}
+                                src='/assets/wika.jpg'
+                                alt='Wiktoria'
+                                style={{
+                                    width: '100%',
+                                    height: '100%',
+                                    float: 'left',
+                                    marginRight: '1rem'
+                            }}
                             />
                         </Grid>
-                    <Grid item xs={12} sm={6}>
-                        <Box sx={{ padding: '1rem', color: 'white' }}>
-                            <Typography variant="h3" sx={{ wordWrap: 'break-word', paddingBottom: 6 }}>
+                    <Grid
+                        item xs={12}
+                        sm={6}
+                    >
+                        <Box
+                            sx=
+                                {{
+                                    padding: '1rem',
+                                    color: 'white'
+                        }}
+                        >
+                            <Typography
+                                variant='h3'
+                                sx=
+                                    {{
+                                        wordWrap: 'break-word',
+                                        paddingBottom: 6
+                            }}
+                            >
                                 Poznaj Wiktorię,
                             </Typography>
-                            <Typography variant="body1" sx={{ wordWrap: 'break-word', fontSize: '1.5rem' }}>
+                            <Typography
+                                variant='body1'
+                                sx=
+                                    {{
+                                        wordWrap: 'break-word',
+                                        fontSize: '1.5rem'
+                            }}
+                            >
                                 Początkującą stylistkę paznokci, pełną pozytywnej energii i dowcipnego podejścia! Z pędzelkiem w jednej
                                 ręce i kolekcją lakierów do paznokci, która przyprawiłaby tęczę o zazdrość, jest gotowa podbić świat,
                                 jeden paznokieć na raz.
@@ -44,19 +87,51 @@ const AboutMe = () => {
                 )}
                     {ChangeScreen && (
                         <>
-                        <Grid item xs={12} className="image-container">
+                        <Grid
+                            item
+                            xs={12}
+                            className='image-container'
+                        >
                             <img
-                                src="/assets/wika.jpg"
-                                alt="Wiktoria"
-                                style={{ width: '100%', height: '100%' }}
+                                src='/assets/wika.jpg'
+                                alt='Wiktoria'
+                                style=
+                                    {{
+                                        width: '100%',
+                                        height: '100%'
+                            }}
                             />
                         </Grid>
-                            <Grid item xs={12} sm={12}>
-                                <Box sx={{ padding: '1rem', color: 'white' }}>
-                                    <Typography variant="h6" sx={{ wordWrap: 'break-word', fontSize: '2rem' }}>
+                            <Grid
+                                item
+                                xs={12}
+                                sm={12}
+                            >
+                                <Box
+                                    sx=
+                                        {{
+                                            padding: '1rem',
+                                            color: 'white'
+                                }}
+                                >
+                                    <Typography
+                                        variant='h6'
+                                        sx=
+                                            {{
+                                                wordWrap: 'break-word',
+                                                fontSize: '2rem'
+                                    }}
+                                    >
                                         Poznaj Wiktorię,
                                     </Typography>
-                                    <Typography variant="body1" sx={{ wordWrap: 'break-word', fontSize: '1.3rem' }}>
+                                    <Typography
+                                        variant='body1'
+                                        sx=
+                                            {{
+                                                wordWrap: 'break-word',
+                                                fontSize: '1.3rem'
+                                    }}
+                                    >
                                         Początkującą stylistkę paznokci, pełną pozytywnej energii i dowcipnego podejścia! Z pędzelkiem w jednej
                                         ręce i kolekcją lakierów do paznokci, która przyprawiłaby tęczę o zazdrość, jest gotowa podbić świat,
                                         jeden paznokieć na raz.

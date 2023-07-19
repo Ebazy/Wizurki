@@ -38,9 +38,19 @@ export default function NailsImageList() {
                     },
                 }}
             >
-                <ImageList variant="masonry" cols={2} gap={12} sx={{ m: 0 }}>
-                    {itemData.map((item) => (
-                        <ImageListItem key={item.img} onClick={handleImageClick} style={{ cursor: 'pointer' }}>
+                <ImageList
+                    variant='masonry'
+                    cols={2}
+                    gap={12}
+                    sx={{ m: 0 }}
+                >
+                    {itemData
+                        .map((item) => (
+                        <ImageListItem
+                            key={item.img}
+                            onClick={handleImageClick}
+                            style={{ cursor: 'pointer' }}
+                        >
                             <img
                                 src={`${item.img}?w=248&fit=crop&auto=format`}
                                 srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
