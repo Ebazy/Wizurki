@@ -1,4 +1,4 @@
-import { AppBar, Box, Toolbar, IconButton } from '@mui/material';
+import { AppBar, Box, Toolbar } from '@mui/material';
 
 function Footer() {
     return (
