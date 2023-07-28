@@ -1,13 +1,13 @@
-import './Components/przedstawiator_ceny.jsx'
-import PrzedstawiatorCeny from "./Components/przedstawiator_ceny.jsx";
-import './Components/Navbar.jsx'
-import './Components/photo_list.jsx'
-import Navbar from "./Components/Navbar.jsx";
-import AboutMe from "./Components/about_me.jsx";
+import './components/PriceTeller.jsx'
+import PrzedstawiatorCeny from "./components/PriceTeller.jsx";
+import './components/Navbar.jsx'
+import './components/PhotoList.jsx'
+import Navbar from "./components/Navbar.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 import {CssBaseline} from "@mui/material";
 import './App.css'
-import NailsImageList from "./Components/photo_list.jsx";
-import Footer from "./Components/footer.jsx";
+import NailsImageList from "./components/PhotoList.jsx";
+import Footer from "./components/Footer.jsx";
 
 
 

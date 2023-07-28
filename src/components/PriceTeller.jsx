@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import supabase from "../config/supabaseClient.jsx";
+import {priceDivBox, priceMenuItem, priceSelectItem} from "./PhotoListStyle.js";
 
 export default function PrzedstawiatorCeny() {
     const [fetchError, setFetchError] = useState(null);
@@ -39,7 +40,7 @@ export default function PrzedstawiatorCeny() {
         <>
             <div
                 className="price_list"
-                style={{maxWidth: 1200}}
+                style={priceDivBox}
             >
                 {fetchError && <p>{fetchError}</p>}
                 {nails && (
@@ -52,7 +53,7 @@ export default function PrzedstawiatorCeny() {
                             label="Wybierz opcję"
                             displayEmpty
                             variant='standard'
-                            sx={{color: 'white', fontSize: '1.1rem'}}
+                            sx={priceSelectItem}
                             disableUnderline='true'
                         >
                             <MenuItem
@@ -66,7 +67,7 @@ export default function PrzedstawiatorCeny() {
                                 <MenuItem
                                     key={index}
                                     value={nail.Title}
-                                    sx={{fontSize: '1.15rem'}}>
+                                    sx={priceMenuItem}>
                                     {nail.Title}
                                 </MenuItem>
                             ))}

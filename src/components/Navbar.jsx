@@ -2,6 +2,13 @@ import { useState} from 'react';
 import { AppBar, Box, Toolbar, Button, IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-scroll';
+import {
+    navbarBox, navbarButtonBox,
+    navbarHamburgerMenuBox, navbarHamburgerMenuContactButton, navbarHamburgerMenuIconButton, navbarHamburgerMenuLink,
+    navbarIconButton, navbarLinkButtonBox, navbarPhotoButton, navbarPriceButton, navbarSecondBox,
+    navbarToolBar,
+    navbarToolBarBox
+} from "./PhotoListStyle.js";
 
 
 
@@ -21,41 +28,33 @@ function Navbar() {
 
     return (
         <Box
-            sx={{ flexGrow: 1 }}>
+            sx={navbarBox}>
             <AppBar
                 position="static">
                 <Toolbar
-                    sx={{
-                    backgroundColor: "purple",
-                    justifyContent: "space-between"
-                }}
+                    sx={navbarToolBar}
                 >
                     <Box
-                        sx={{
-                        display: { xs: 'none', sm: 'flex' },
-                        alignItems: 'center'
-                    }}
+                        sx={navbarToolBarBox}
                     >
                         <IconButton
                             size="large"
                             edge="start"
                             color="inherit"
                             aria-label="menu"
-                            sx={{ mr: 2, fontSize: '3rem'}}
+                            sx={navbarHamburgerMenuIconButton}
                         >
                             Wizurki
                         </IconButton>
                     </Box>
                     <Box
-                        sx={{
-                        display: { xs: 'flex', sm: 'none' },
-                        alignItems: 'center' }}>
+                        sx={navbarHamburgerMenuBox}>
                         <IconButton
                             size="large"
                             edge="start"
                             color="inherit"
                             aria-label="menu"
-                            sx={{ mr: 2 }}
+                            sx={navbarIconButton}
                             onClick={handleClick}
                         >
                             <MenuIcon />
@@ -85,16 +84,13 @@ function Navbar() {
                                     <Button
                                         onClick={handleClose}
                                         color="inherit"
-                                        sx={{textDecoration: 'none'}}
+                                        sx={navbarHamburgerMenuContactButton}
                                     >
                                         <a
                                             href="https://booksy.com/pl-pl/139457_manifest-studio_paznokcie_3_warszawa"
                                               target="_blank"
                                               rel="noopener noreferrer"
-                                        style={{
-                                            textDecoration: 'inherit',
-                                            color: 'inherit'
-                                        }}
+                                        style={navbarHamburgerMenuLink}
                                         >
                                             Kontakt
                                         </a>
@@ -119,25 +115,19 @@ function Navbar() {
                         </Menu>
                     </Box>
                     <Box
-                        sx={{
-                            display: { xs: 'flex', sm: 'none' },
-                            alignItems: 'center'
-                    }}
+                        sx={navbarSecondBox}
                     >
                     <IconButton
                         size="large"
                         edge="start"
                         color="inherit"
                         aria-label="menu"
-                        sx={{ mr: 2 }}
+                        sx={navbarIconButton}
                     >
                         Wizurki
                     </IconButton>
                     </Box>
-                    <Box sx={{
-                        display: { xs: 'none', sm: 'flex' },
-                        alignItems: 'center'
-                    }}
+                    <Box sx={navbarButtonBox}
                     >
                         <Link
                             to="cennik"
@@ -147,12 +137,7 @@ function Navbar() {
                             offset={-70}
                         >
                         <Button
-                            sx={{
-                                mr: 2,
-                                border: "2px solid black",
-                                borderRadius: 3,
-                                fontSize: '1'
-                        }}
+                            sx={navbarPriceButton}
                             color="inherit"
                         >
                             Cennik
@@ -162,18 +147,10 @@ function Navbar() {
                             href="https://booksy.com/pl-pl/139457_manifest-studio_paznokcie_3_warszawa"
                             target="_blank"
                             rel="noopener noreferrer"
-                           style={{
-                               textDecoration: 'inherit',
-                               color: 'inherit'
-                        }}
+                           style={navbarHamburgerMenuLink}
                         >
                         <Button
-                            sx={{
-                                mr: 2,
-                                border: "2px solid black",
-                                borderRadius: 3,
-                                fontSize: '1'
-                        }}
+                            sx={navbarLinkButtonBox}
                             color="inherit"
                         >
                             Kontakt
@@ -187,12 +164,7 @@ function Navbar() {
                             offset={-70}
                         >
                         <Button
-                            sx={{
-                                mr: 2,
-                                border: "2px solid black",
-                                borderRadius: 3,
-                                fontSize: '1'
-                        }}
+                            sx={navbarPhotoButton}
                             color="inherit"
                         >
                             Zdjęcia prac

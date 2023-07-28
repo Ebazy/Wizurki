@@ -1,4 +1,13 @@
 import { Typography, Container, Paper, Grid, Box, useMediaQuery, useTheme } from '@mui/material';
+import {
+    aboutmeChangeBox,
+    aboutmeChangeImg, aboutmeChangeText, aboutmeChangeTitle,
+    aboutmeContainer,
+    aboutmeNoChangeBox,
+    aboutmeNoChangeImg, aboutmeNoChangeText,
+    aboutmeNoChangeTitle,
+    aboutmePaper
+} from "./PhotoListStyle.js";
 
 const AboutMe = () => {
     const theme = useTheme();
@@ -7,16 +16,11 @@ const AboutMe = () => {
     return (
         <Container
             maxWidth='lg'
-            sx={{
-                backgroundColor: 'transparent'
-        }}
+            sx={aboutmeContainer}
         >
             <Paper
                 elevation={3}
-                sx={{
-                    backgroundColor: 'transparent',
-                    boxShadow: '0px 5px 5px -3px purple, 0px 4px 5px 0px purple, 0px 2px 10px 0px purple;'
-            }}
+                sx={aboutmePaper}
             >
                 <Grid
                     container spacing={2}
@@ -29,12 +33,7 @@ const AboutMe = () => {
                             <img
                                 src='/assets/wika.jpg'
                                 alt='Wiktoria'
-                                style={{
-                                    width: '100%',
-                                    height: '100%',
-                                    float: 'left',
-                                    marginRight: '1rem'
-                            }}
+                                style={aboutmeNoChangeImg}
                             />
                         </Grid>
                     <Grid
@@ -42,29 +41,18 @@ const AboutMe = () => {
                         sm={6}
                     >
                         <Box
-                            sx=
-                                {{
-                                    padding: '1rem',
-                                    color: 'white'
-                        }}
+                            sx={aboutmeNoChangeBox}
+
                         >
                             <Typography
                                 variant='h3'
-                                sx=
-                                    {{
-                                        wordWrap: 'break-word',
-                                        paddingBottom: 6
-                            }}
+                                sx={aboutmeNoChangeTitle}
                             >
                                 Poznaj Wiktorię,
                             </Typography>
                             <Typography
                                 variant='body1'
-                                sx=
-                                    {{
-                                        wordWrap: 'break-word',
-                                        fontSize: '1.5rem'
-                            }}
+                                sx={aboutmeNoChangeText}
                             >
                                 Początkującą stylistkę paznokci, pełną pozytywnej energii i dowcipnego podejścia! Z pędzelkiem w jednej
                                 ręce i kolekcją lakierów do paznokci, która przyprawiłaby tęczę o zazdrość, jest gotowa podbić świat,
@@ -95,11 +83,7 @@ const AboutMe = () => {
                             <img
                                 src='/assets/wika.jpg'
                                 alt='Wiktoria'
-                                style=
-                                    {{
-                                        width: '100%',
-                                        height: '100%'
-                            }}
+                                style={aboutmeChangeImg}
                             />
                         </Grid>
                             <Grid
@@ -108,29 +92,17 @@ const AboutMe = () => {
                                 sm={12}
                             >
                                 <Box
-                                    sx=
-                                        {{
-                                            padding: '1rem',
-                                            color: 'white'
-                                }}
+                                    sx={aboutmeChangeBox}
                                 >
                                     <Typography
                                         variant='h6'
-                                        sx=
-                                            {{
-                                                wordWrap: 'break-word',
-                                                fontSize: '2rem'
-                                    }}
+                                        sx={aboutmeChangeTitle}
                                     >
                                         Poznaj Wiktorię,
                                     </Typography>
                                     <Typography
                                         variant='body1'
-                                        sx=
-                                            {{
-                                                wordWrap: 'break-word',
-                                                fontSize: '1.3rem'
-                                    }}
+                                        sx={aboutmeChangeText}
                                     >
                                         Początkującą stylistkę paznokci, pełną pozytywnej energii i dowcipnego podejścia! Z pędzelkiem w jednej
                                         ręce i kolekcją lakierów do paznokci, która przyprawiłaby tęczę o zazdrość, jest gotowa podbić świat,

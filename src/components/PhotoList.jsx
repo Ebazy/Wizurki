@@ -2,6 +2,7 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Container } from "@mui/material";
+import {itemlistStyle, listContainer, listBox, listImageList} from "./PhotoListStyle.js";
 
 export default function NailsImageList() {
 
@@ -12,44 +13,23 @@ export default function NailsImageList() {
 
     return (
         <Container
-            sx={{
-                display: 'flex',
-                justifyContent: 'center',
-                mt: 10,
-                pb: 10
-            }}
+            sx={listContainer}
         >
             <Box
-                sx={{
-                    width: 900,
-                    height: 500,
-                    border: '2px solid purple',
-                    boxShadow: '0px 3px 3px -2px purple, 0px 3px 4px 0px purple, 0px 1px 8px 0px purple;',
-                    backgroundColor: '#cd5c5c',
-                    overflowY: 'scroll',
-                    scrollbarColor: 'purple pink',
-                    '&::-webkit-scrollbar': {
-                        width: '8px',
-                        backgroundColor: '#cd5c5c',
-                    },
-                    '&::-webkit-scrollbar-thumb': {
-                        backgroundColor: 'purple',
-                        borderRadius: '4px',
-                    },
-                }}
+                sx={listBox}
             >
                 <ImageList
                     variant='masonry'
                     cols={2}
                     gap={12}
-                    sx={{ m: 0 }}
+                    sx={itemlistStyle}
                 >
                     {itemData
                         .map((item) => (
                         <ImageListItem
                             key={item.img}
                             onClick={handleImageClick}
-                            style={{ cursor: 'pointer' }}
+                            style={listImageList}
                         >
                             <img
                                 src={`${item.img}?w=248&fit=crop&auto=format`}
