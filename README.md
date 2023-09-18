@@ -12,5 +12,5 @@ Strona jest narazie wersją demo, w późniejszym czasie zostanie ona rozwinięt
 - blog w postaci zczytywanych postów z instagrama/tiktok'a
 
 
-link do strony Wizurki 'https://sweet-pixie-82982c.netlify.app'
+link do strony Wizurki 'https://admirable-taffy-fcf44e.netlify.app'
 
